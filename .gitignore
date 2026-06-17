@@ -1,0 +1,60 @@
+# =========================
+# Java / Spring Boot
+# =========================
+target/
+build/
+*.log
+*.class
+
+# =========================
+# Maven
+# =========================
+.mvn/wrapper/maven-wrapper.jar
+
+# =========================
+# Gradle
+# =========================
+.gradle/
+build/
+
+# =========================
+# IDEs
+# =========================
+
+# IntelliJ
+.idea/
+*.iml
+*.iws
+
+# Eclipse
+.project
+.classpath
+.settings/
+
+# VS Code
+.vscode/
+
+# =========================
+# Sistema operacional
+# =========================
+.DS_Store
+Thumbs.db
+
+# =========================
+# Logs
+# =========================
+logs/
+*.log
+
+# =========================
+# Env / configs locais
+# =========================
+.env
+.env.*
+application-local.yml
+application-dev.yml
+
+# =========================
+# Docker (opcional)
+# =========================
+docker-data/
