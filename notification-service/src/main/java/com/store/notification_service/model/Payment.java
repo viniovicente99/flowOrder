@@ -11,6 +11,13 @@ import java.util.UUID;
 @Data
 public class Payment {
 
+    public Payment(UUID orderId, BigDecimal amount, String status, String failureReason) {
+        this.orderId = orderId;
+        this.amount = amount;
+        this.status = status;
+        this.failureReason = failureReason;
+    }
+
     @JsonProperty("order_id")
     @NotNull(message = "Order Id is required.")
     private UUID orderId;

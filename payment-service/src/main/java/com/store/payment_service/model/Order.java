@@ -1,14 +1,24 @@
 package com.store.payment_service.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import jakarta.validation.constraints.*;
 import lombok.Data;
 
 import java.math.BigDecimal;
+import java.time.LocalDateTime;
 import java.util.UUID;
 
 @Data
 public class Order {
+
+    public Order(UUID id, String productName, BigDecimal amount, String status, String statusReason) {
+        this.id = id;
+        this.productName = productName;
+        this.amount = amount;
+        this.status = status;
+        this.statusReason = statusReason;
+    }
 
     private UUID id;
 
@@ -28,5 +38,9 @@ public class Order {
 
     @JsonProperty("status_reason")
     private String statusReason;
+
+    @JsonProperty("created_at")
+    @JsonIgnoreProperties
+    private LocalDateTime createdAt;
 
 }

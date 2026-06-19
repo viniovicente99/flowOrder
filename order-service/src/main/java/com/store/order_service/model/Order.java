@@ -4,6 +4,7 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.*;
 import lombok.Data;
+import lombok.ToString;
 import org.hibernate.annotations.UpdateTimestamp;
 
 import java.math.BigDecimal;
@@ -14,6 +15,16 @@ import java.util.UUID;
 @Entity
 @Table(name = "orders")
 public class Order {
+
+    public Order(UUID id, String productName, BigDecimal amount, String status, String statusReason) {
+        this.id = id;
+        this.productName = productName;
+        this.amount = amount;
+        this.status = status;
+        this.statusReason = statusReason;
+    }
+
+    public Order() {}
 
     @Id
     @GeneratedValue(strategy = GenerationType.UUID)
@@ -38,8 +49,9 @@ public class Order {
     @JsonProperty("status_reason")
     private String statusReason;
 
-    @Column(name = "created_at")
     @JsonProperty("created_at")
+    @Column(name = "created_at")
     @UpdateTimestamp
     private LocalDateTime createdAt;
+
 }
