@@ -20,6 +20,8 @@ public class Order {
         this.statusReason = statusReason;
     }
 
+    public Order() {}
+
     private UUID id;
 
     @JsonProperty("product_name")
