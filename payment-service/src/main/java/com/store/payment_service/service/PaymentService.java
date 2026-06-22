@@ -37,8 +37,8 @@ public class PaymentService {
 
         paymentRepository.save(payment);
 
-        System.out.println("Payment processed and published to queue.");
         publishPayment(payment, paymentQueue);
+        System.out.println("Payment processed and published to queue.");
 
     }
 

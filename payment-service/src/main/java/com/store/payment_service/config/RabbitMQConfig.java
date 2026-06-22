@@ -37,12 +37,16 @@ public class RabbitMQConfig {
     @Value("${rabbitmq.orderqueue}")
     private String orderQueue;
 
+    @Value("${rabbitmq.virtual-host}")
+    private String vHost;
+
     @Bean
     public CachingConnectionFactory connectionFactory () throws Exception {
         CachingConnectionFactory connectionFactory = new CachingConnectionFactory(hostName);
         connectionFactory.setUsername(userName);
         connectionFactory.setPassword(password);
         connectionFactory.setPort(port);
+        connectionFactory.setVirtualHost(vHost);
         return connectionFactory;
     }
 

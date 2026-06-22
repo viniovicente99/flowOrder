@@ -22,7 +22,7 @@ public class OrderController {
     @Autowired
     private OrderService orderService;
 
-    @Value("${rabbitmq.queuename}")
+    @Value("${rabbitmq.orderqueue}")
     private String queueName;
 
     @GetMapping

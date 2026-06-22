@@ -18,6 +18,8 @@ public class Payment {
         this.failureReason = failureReason;
     }
 
+    public Payment() {}
+
     @JsonProperty("order_id")
     @NotNull(message = "Order Id is required.")
     private UUID orderId;
