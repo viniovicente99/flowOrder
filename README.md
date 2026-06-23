@@ -78,7 +78,6 @@ store-queue-project/
 ├── order-service/
 ├── payment-service/
 ├── notification-service/
-├── common/
 └── docker-compose.yml
 ```
 
