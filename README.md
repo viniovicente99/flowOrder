@@ -199,12 +199,9 @@ mvn test
 
 ## 🚀 Possíveis Evoluções
 
-* Implementação do padrão Outbox
 * Observabilidade (logs centralizados + tracing)
-* API Gateway
 * Autenticação e autorização (JWT)
 * Estratégias avançadas de retry/backoff
-* Testes de integração com Testcontainers
 
 ---
 
