@@ -15,10 +15,10 @@ public class SwaggerConfig {
                 .title("FlowOrder")
                 .version("1.0.0")
                 .description("Asynchronous order processing system based on a microservices architecture, using RabbitMQ" +
-                        "for event-driven communication.\n" +
-                        "The flow starts in the order service, which persists orders and publishes events." +
+                        " for event-driven communication." +
+                        "<br> </br>The flow starts in the order service, which persists orders and publishes events." +
                         "The payment service processes these events and emits new ones, which are then consumed by the" +
-                        "notification service."));
+                        " notification service."));
 
     }
 }
