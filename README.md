@@ -4,6 +4,14 @@ Sistema distribuído baseado em microsserviços para processamento de pedidos de
 
 O projeto simula um fluxo real de e-commerce, onde cada etapa é desacoplada e processada de forma independente.
 
+🔗 Documentação da API (Swagger):
+Explore e teste o processo completo assíncrono:
+
+https://order-service-2fg6.onrender.com/
+
+👉 Comece com a criação de uma Order:
+POST /orders
+
 ---
 
 ## 🚀 Visão Geral
