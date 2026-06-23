@@ -44,7 +44,6 @@ Cada serviço possui responsabilidade única e se comunica exclusivamente por fi
 * Comunicação assíncrona para desacoplamento
 * Uso de filas para resiliência e escalabilidade
 * Dead Letter Queues (DLQ) para tratamento de falhas
-* DTO compartilhado (`common`) para padronização de contrato
 * Persistência isolada por serviço
 
 ---
